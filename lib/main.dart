@@ -1,6 +1,9 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:ui_mobile_vape_control/screens/home.dart';
+import 'package:ui_mobile_vape_control/screens/mode.dart';
+import 'package:ui_mobile_vape_control/screens/settings.dart';
 
 void main() {
   runApp(
@@ -20,8 +23,16 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       title: 'Flutter Demo',
-
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        body: PageView(
+          children: const [
+            HomeScreen(),
+            SettingScreen(),
+            ModeScreen(),
+          ],
+        ),
+      ),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

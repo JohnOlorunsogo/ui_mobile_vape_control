@@ -5,6 +5,13 @@ class SettingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      decoration: ShapeDecoration(
+        color: const Color(0xFFEEF0F6),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(35),
+        ),
+      ),
+    );
   }
 }

@@ -6,6 +6,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.sizeOf(context).width;
     return Container(
       height: double.maxFinite,
       decoration: ShapeDecoration(
@@ -16,7 +17,8 @@ class HomeScreen extends StatelessWidget {
       ),
       child: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          padding: EdgeInsets.symmetric(
+              horizontal: width * 0.08, vertical: width * 0.043),
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -252,7 +254,42 @@ class HomeScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 1)
                 ],
-              )
+              ),
+              // Transform(
+              //   transform: Matrix4.identity()
+              //     ..translate(0.0, 0.0)
+              //     ..rotateZ(3.14),
+              //   child: Container(
+              //     width: 209,
+              //     height: 306,
+              //     decoration: ShapeDecoration(
+              //       color: const Color(0xFFEEF0F6),
+              //       shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(19),
+              //       ),
+              //       shadows: const [
+              //         BoxShadow(
+              //           color: Color(0x0F000000),
+              //           blurRadius: 36,
+              //           offset: Offset(6, 6),
+              //           spreadRadius: 0,
+              //         ),
+              //         BoxShadow(
+              //           color: Color(0xFFFFFFFF),
+              //           blurRadius: 13,
+              //           offset: Offset(-4, -4),
+              //           spreadRadius: 0,
+              //         ),
+              //         BoxShadow(
+              //           color: Color(0x11000000),
+              //           blurRadius: 7,
+              //           offset: Offset(4, 4),
+              //           spreadRadius: 0,
+              //         )
+              //       ],
+              //     ),
+              //   ),
+              // )
             ],
           ),
         ),

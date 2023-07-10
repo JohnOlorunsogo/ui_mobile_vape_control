@@ -217,6 +217,94 @@ class HomeScreen extends StatelessWidget {
                         )
                       ],
                     ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          width: 60,
+                          // height: 30,
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                          decoration: ShapeDecoration(
+                            color: const Color(0xFFEEF0F6),
+                            shape: RoundedRectangleBorder(
+                              side: BorderSide(
+                                width: 0.50,
+                                color: Colors.white
+                                    .withOpacity(0.6000000238418579),
+                              ),
+                              borderRadius: BorderRadius.circular(10),
+                            ),
+                            shadows: const [
+                              BoxShadow(
+                                // color: Color(0x1642526B),
+                                color: Colors.black12,
+                                blurRadius: 8,
+                                offset: Offset(3, 3),
+                                spreadRadius: 0,
+                              ),
+                              BoxShadow(
+                                // color: Color(0x3FFFFFFF),
+                                color: Colors.white,
+                                blurRadius: 8,
+                                offset: Offset(-4, -4),
+                                spreadRadius: 0,
+                              )
+                            ],
+                          ),
+                          child: TextButton(
+                            onPressed: () {},
+                            style: TextButton.styleFrom(
+                              padding: EdgeInsets.zero,
+                              minimumSize: Size.zero,
+                              // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                            ),
+                            child: Text(
+                              'Mod',
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.poppins(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w700,
+                                color: const Color(0xFF707585),
+                              ),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            padding: EdgeInsets.zero,
+                            minimumSize: Size.zero,
+                            // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          ),
+                          child: Text(
+                            'Settings',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.poppins(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                              color: const Color(0xFF707585),
+                            ),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            padding: EdgeInsets.zero,
+                            minimumSize: Size.zero,
+                            // tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          ),
+                          child: Text(
+                            'Model',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.poppins(
+                              fontSize: 13,
+                              fontWeight: FontWeight.w700,
+                              color: const Color(0xFF707585),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     width: 58,
@@ -239,6 +327,8 @@ class HomeScreen extends StatelessWidget {
                         ),
                         BoxShadow(
                           color: Color(0xFFFFFFFF),
+                          // color: Colors.red,
+
                           blurRadius: 13,
                           offset: Offset(-4, -4),
                           spreadRadius: 0,
@@ -251,45 +341,47 @@ class HomeScreen extends StatelessWidget {
                         )
                       ],
                     ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.light_rounded),
+                    ),
                   ),
                   const SizedBox(width: 1)
                 ],
               ),
-              // Transform(
-              //   transform: Matrix4.identity()
-              //     ..translate(0.0, 0.0)
-              //     ..rotateZ(3.14),
-              //   child: Container(
-              //     width: 209,
-              //     height: 306,
-              //     decoration: ShapeDecoration(
-              //       color: const Color(0xFFEEF0F6),
-              //       shape: RoundedRectangleBorder(
-              //         borderRadius: BorderRadius.circular(19),
-              //       ),
-              //       shadows: const [
-              //         BoxShadow(
-              //           color: Color(0x0F000000),
-              //           blurRadius: 36,
-              //           offset: Offset(6, 6),
-              //           spreadRadius: 0,
-              //         ),
-              //         BoxShadow(
-              //           color: Color(0xFFFFFFFF),
-              //           blurRadius: 13,
-              //           offset: Offset(-4, -4),
-              //           spreadRadius: 0,
-              //         ),
-              //         BoxShadow(
-              //           color: Color(0x11000000),
-              //           blurRadius: 7,
-              //           offset: Offset(4, 4),
-              //           spreadRadius: 0,
-              //         )
-              //       ],
-              //     ),
-              //   ),
-              // )
+              const SizedBox(
+                height: 24,
+              ),
+              Container(
+                width: 209,
+                height: 306,
+                decoration: ShapeDecoration(
+                  color: const Color(0xFFEEF0F6),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(19),
+                  ),
+                  shadows: const [
+                    BoxShadow(
+                      color: Color(0x0F000000),
+                      blurRadius: 36,
+                      offset: Offset(6, 6),
+                      spreadRadius: 0,
+                    ),
+                    BoxShadow(
+                      color: Color(0xFFFFFFFF),
+                      blurRadius: 13,
+                      offset: Offset(-4, -4),
+                      spreadRadius: 0,
+                    ),
+                    BoxShadow(
+                      color: Color(0x11000000),
+                      blurRadius: 7,
+                      offset: Offset(4, 4),
+                      spreadRadius: 0,
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),

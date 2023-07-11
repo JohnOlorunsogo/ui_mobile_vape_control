@@ -12,6 +12,7 @@ class ModeScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(35),
         ),
       ),
+      child: const Center(child: Text('Mode Screen')),
     );
   }
 }

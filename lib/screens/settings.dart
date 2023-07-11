@@ -12,7 +12,7 @@ class SettingScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(35),
         ),
       ),
+      child: const Text('Setting Screen'),
     );
   }
 }
-

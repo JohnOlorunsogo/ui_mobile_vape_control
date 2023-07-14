@@ -245,7 +245,7 @@ class HomeScreen extends StatelessWidget {
                               BoxShadow(
                                 // color: Color(0x3FFFFFFF),
                                 color: Colors.white,
-                                blurRadius: 8,
+                                blurRadius: 10,
                                 offset: Offset(-4, -4),
                                 spreadRadius: 0,
                               )
